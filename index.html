@@ -5,16 +5,25 @@
     <title>RIOT | StackAcademy.tv </title>
     <link rel="stylesheet" href="style/stack.css">
     <link rel="stylesheet" href="style/style.css">
+    <style type="riot"></style>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script src="js/riot+compiler.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1 id="header">Syntax & Structure</h1>
-      <hello-world my_heading="Hello from Riot"></hello-world>
+      <user-group
+        group_name="Admin"
+        user_class="admin-user">
+      </user-group>
     </div>
 
-    <script src="js/components/hello-world.js"></script>
-
+    <script type="riot/tag" src="tags/user-group.tag"></script>
+    <script type="riot/tag" src="tags/user.tag"></script>
     <script>riot.mount('*');</script>
   </body>
 </html>
