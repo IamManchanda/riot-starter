@@ -1,5 +1,7 @@
 <hello-world>
-  <h1>Hello from Riot</h1>
+  <h2 if={ has_greeting }>Hello from Riot</h2>
 
-  <script></script>
+  <script>
+    this.has_greeting = true;
+  </script>
 </hello-world>
